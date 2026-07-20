@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: openapi/bytez-openapi.yaml
+docs: https://docs.bytez.com/model-api/docs/get-started
+notes: >-
+  Single API key model. Send the Bytez key in the `Authorization` header (value
+  is the raw key, e.g. `Authorization: BYTEZ_KEY`). To call closed-source
+  providers (OpenAI, Anthropic, Cohere, Google, Mistral) add a second
+  `provider-key` header carrying your provider account key; Bytez pass-through
+  routes it and never stores it. Keys are issued from the API dashboard at
+  https://bytez.com/api. No OAuth / scopes surface.
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKeyAuth
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: "Set `Authorization` header to `BYTEZ_KEY` \n``` 'Authorization: YOUR_KEY_HERE'\
+    \ ```"
+  sources:
+  - openapi/bytez-openapi.yaml
