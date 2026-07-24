@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bytez-openapi.yaml
+notes: >-
+  No published compliance certifications (SOC 2 / ISO 27001 / etc.) were found
+  on the Bytez site or a trust center as of 2026-07-18, so no `Compliance`
+  pointer is emitted. Standards below are derived from the spec and docs.
+standards:
+- id: openapi-3.0
+  conforms: true
+  evidence: openapi/bytez-openapi.yaml is OpenAPI 3.0.3
+- id: openai-chat-completions-compat
+  conforms: true
+  evidence: >-
+    Documents OpenAI-compatible Chat Completions, Completions, and Responses
+    endpoints usable with OpenAI clients.
+- id: rest
+  conforms: true
+  evidence: JSON over HTTPS, resource-style /models/v2 paths.
+- id: oauth2
+  conforms: false
+  evidence: apiKey (Authorization header) only; no OAuth surface.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Uses a uniform { error, output } envelope rather than application/problem+json.
+- id: sse-streaming
+  conforms: true
+  evidence: Supports token streaming (stream:true) and media streaming (json:true).

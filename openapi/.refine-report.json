@@ -1,0 +1,14 @@
+{
+  "provider": "bytez",
+  "sources": [
+    "bytez-models-api-openapi.yml"
+  ],
+  "outputs": [
+    "bytez-models-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

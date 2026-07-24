@@ -1,0 +1,47 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bytez-openapi.yaml
+notes: >-
+  Bytez is a stateless inference gateway, not a CRUD resource API, so the entity
+  graph is shallow. Derived from the OpenAPI request/response schemas.
+entities:
+- name: Model
+  description: A runnable AI model exposed by Bytez.
+  id_field: modelId
+  id_shape: "{org}/{name} (e.g. openai-community/gpt2)"
+  fields:
+  - modelId
+  - task
+  - params (billions)
+  - ramRequired (GB)
+  - meter
+  - meterPrice (per second)
+  source: openapi/bytez-openapi.yaml#getModels
+- name: Task
+  description: A category of model capability (chat, text-to-image, translation, etc.).
+  id_field: task
+  source: openapi/bytez-openapi.yaml#getTasks
+- name: Inference
+  description: A single serverless run of a model against task-specific inputs.
+  fields:
+  - text
+  - messages
+  - url
+  - base64
+  - question
+  - context
+  - candidate_labels
+  - stream
+  - json
+  - params
+  response: '{ error, output }'
+  source: openapi/bytez-openapi.yaml#runModel
+relationships:
+- from: Model
+  to: Task
+  type: belongs_to
+  via: task
+- from: Inference
+  to: Model
+  type: belongs_to
+  via: modelId

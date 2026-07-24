@@ -1,0 +1,54 @@
+arazzo: 1.0.1
+info:
+  title: Discover and run a Bytez model
+  version: 1.0.0
+  summary: List models for a task, pick one, and run serverless inference.
+sourceDescriptions:
+- name: bytezApi
+  url: ../openapi/bytez-openapi.yaml
+  type: openapi
+workflows:
+- workflowId: discoverAndRunModel
+  summary: Find a chat model via getModels then run it with runModel.
+  description: >-
+    Lists available models for a task, selects the first model id, then runs an
+    inference request against it and returns the model output.
+  inputs:
+    type: object
+    properties:
+      task:
+        type: string
+        default: chat
+      text:
+        type: string
+        default: Hello from API Evangelist
+  steps:
+  - stepId: listModels
+    description: Retrieve models available for the requested task.
+    operationId: getModels
+    parameters:
+    - name: task
+      in: query
+      value: $inputs.task
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      firstModelId: $response.body#/output/0/modelId
+  - stepId: runModel
+    description: Run inference on the selected model.
+    operationId: runModel
+    parameters:
+    - name: modelId
+      in: path
+      value: $steps.listModels.outputs.firstModelId
+    requestBody:
+      contentType: application/json
+      payload:
+        text: $inputs.text
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      result: $response.body#/output
+  outputs:
+    modelId: $steps.listModels.outputs.firstModelId
+    result: $steps.runModel.outputs.result

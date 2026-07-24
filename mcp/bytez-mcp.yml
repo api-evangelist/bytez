@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: openapi/bytez-openapi.yaml
+notes: >-
+  No official hosted/remote MCP server was found on the Bytez docs, npm
+  (@modelcontextprotocol), or MCP registries as of 2026-07-18. The Bytez-com
+  GitHub org has an "agentic-repo" project, but it is an internal GenAI app
+  build, not a published MCP server. The tool list below is a CANDIDATE derived
+  one-to-one from the OpenAPI operations for a future MCP surface.
+server:
+  name: bytez
+  transport: http
+tools:
+- name: run_model
+  description: >-
+    Run any open or closed AI model serverlessly by modelId. Inputs vary by
+    task (text, messages, url/base64, question/context, candidate_labels).
+  source_operation: openapi/bytez-openapi.yaml#runModel
+- name: list_models
+  description: List available models, optionally filtered by task via the `task` query parameter.
+  source_operation: openapi/bytez-openapi.yaml#getModels
+- name: list_tasks
+  description: List the supported task types (chat, text-to-image, translation, etc.).
+  source_operation: openapi/bytez-openapi.yaml#getTasks

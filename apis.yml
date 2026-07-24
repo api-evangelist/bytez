@@ -1,20 +1,69 @@
 aid: bytez
 name: Bytez
-description: Bytez is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bytez is a unified, serverless model-inference API that gives developers access
+  to 100,000+ open-source and closed-source AI models (from OpenAI, Anthropic,
+  Cohere, Google, Mistral, and the open-source community) through a single API key
+  and one consistent endpoint shape. It covers 30+ task types across text, vision,
+  audio, multimodal, and generation - including chat, embeddings, transcription,
+  image and video generation, translation, and object detection - and offers
+  OpenAI-compatible Chat Completions, Completions, and Responses endpoints plus a
+  LangChain integration. Bytez manages GPU provisioning and scaling behind the
+  scenes and bills on a unified credit system (per second for open models, provider
+  pricing for closed models). It is backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/bytez/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-x-tier: stub
-x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://bytez.com/favicon.png
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- Model Inference
+- LLM
+- Open Source AI
+- API
+- Developers
+apis:
+- aid: bytez:bytez-models-api
+  name: Bytez Models API
+  description: The Models API from Bytez — 3 operation(s) for models.
+  humanURL: https://docs.bytez.com/model-api/docs/welcome
+  baseURL: https://api.bytez.com
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/bytez-models-api-openapi.yml
+  - type: Authentication
+    url: authentication/bytez-authentication.yml
+  - type: ErrorCatalog
+    url: errors/bytez-problem-types.yml
+  - type: Conventions
+    url: conventions/bytez-conventions.yml
+  - type: DataModel
+    url: data-model/bytez-data-model.yml
+  - type: RateLimits
+    url: rate-limits/bytez-rate-limits.yml
+  - type: Arazzo
+    url: arazzo/bytez-discover-and-run.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +72,54 @@ maintainers:
 common:
 - type: Website
   url: https://bytez.com
+- type: DeveloperPortal
+  url: https://docs.bytez.com
+- type: Documentation
+  url: https://docs.bytez.com/model-api/docs/welcome
+- type: APIReference
+  url: https://docs.bytez.com/http-reference/overview
+- type: GettingStarted
+  url: https://docs.bytez.com/model-api/docs/get-started
+- type: SignUp
+  url: https://bytez.com/api
+- type: Pricing
+  url: https://docs.bytez.com/model-api/docs/billing
+- type: Blog
+  url: https://docs.bytez.com/company/blog
+- type: Roadmap
+  url: https://docs.bytez.com/company/roadmap
+- type: Support
+  url: https://discord.com/invite/Z723PfCFWf
+- type: GitHubOrganization
+  url: https://github.com/Bytez-com
+- type: StatusPage
+  url: https://status.bytez.com
+- type: SDKs
+  url: packages/bytez-packages.yml
+- type: Packages
+  url: packages/bytez-packages.yml
+- type: MCPServer
+  url: mcp/bytez-mcp.yml
+- type: LLMsTxt
+  url: llms/bytez-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+- type: AgenticAccess
+  url: agentic-access/bytez-agentic-access.yml
+- type: Authentication
+  url: authentication/bytez-authentication.yml
+- type: Conventions
+  url: conventions/bytez-conventions.yml
+- type: ErrorCatalog
+  url: errors/bytez-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/bytez-lifecycle.yml
+- type: Conformance
+  url: conformance/bytez-conformance.yml
+- type: DomainSecurity
+  url: security/bytez-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

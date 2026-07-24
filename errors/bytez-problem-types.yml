@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bytez-openapi.yaml
+format: json-envelope
+notes: >-
+  Bytez does not use RFC 9457 problem+json. Every response is a uniform envelope
+  `{ "error": <string|null>, "output": <result|null> }`; on failure `error`
+  carries a human-readable message and `output` is null. Derived from the
+  OpenAPI 401/429 responses; enriched from the docs auth/rate-limit guidance.
+envelope:
+  fields:
+    error: string or null - null when the call succeeds, otherwise the error message
+    output: the model output, or null on error
+problems:
+- status: 401
+  key: Unauthorized
+  title: Authentication error
+  detail: Check your API key and how you're sending it (Authorization header).
+  envelope_error: Unauthorized
+  source_operation: openapi/bytez-openapi.yaml#runModel
+- status: 429
+  key: RateLimitError
+  title: Too Many Requests
+  detail: >-
+    You have hit the rate limit. Free tier allows 1 concurrent request for open
+    models and 10 requests/second for closed models; limits scale with credits
+    purchased.
+  envelope_error: Rate limit exceeded
+  source_operation: openapi/bytez-openapi.yaml#runModel

@@ -1,0 +1,23 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Bytez Model API
+  version: 1.0.0
+extends: openapi/bytez-openapi.yaml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-provider: bytez
+    x-apievangelist-category: ai-model-inference
+    x-apievangelist-auth: api-key-header
+    x-apievangelist-base-url: https://api.bytez.com
+    x-apievangelist-sdks: [bytez.js, bytez, langchain-bytez]
+    x-apievangelist-status-page: https://status.bytez.com
+- target: $.paths['/models/v2/{modelId}'].post
+  update:
+    x-apievangelist-tags: [inference, serverless, open-and-closed-models]
+- target: $.paths['/models/v2/list/models'].get
+  update:
+    x-apievangelist-tags: [discovery, models]
+- target: $.paths['/models/v2/list/tasks'].get
+  update:
+    x-apievangelist-tags: [discovery, tasks]

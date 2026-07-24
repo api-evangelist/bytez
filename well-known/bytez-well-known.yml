@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on Bytez hosts (2026-07-18)
+notes: >-
+  No /.well-known discovery documents are published. api.bytez.com returns 401
+  (auth wall) for every path; bytez.com and docs.bytez.com return 404. Recorded
+  for auditability; no WellKnown/SecurityTxt pointer is emitted since nothing was
+  found.
+hosts:
+- host: https://api.bytez.com
+  documents:
+  - {path: /.well-known/security.txt, status: 401}
+  - {path: /.well-known/openid-configuration, status: 401}
+  - {path: /.well-known/oauth-authorization-server, status: 401}
+  - {path: /.well-known/api-catalog, status: 401}
+  - {path: /.well-known/ai-plugin.json, status: 401}
+- host: https://bytez.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://docs.bytez.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}

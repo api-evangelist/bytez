@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.bytez.com/model-api/docs/status
+versioning:
+  scheme: uri-path
+  current: v2
+  path_prefix: /models/v2
+  docs: https://docs.bytez.com/http-reference/overview
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation/Sunset policy documented as of 2026-07-18.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.bytez.com
+support:
+  discord: https://discord.com/invite/Z723PfCFWf
+  github_issues: https://github.com/Bytez-com/docs/issues
+  email: team@bytez.com
+roadmap: https://docs.bytez.com/company/roadmap
+deprecated_operations: []

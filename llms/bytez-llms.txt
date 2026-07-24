@@ -1,0 +1,105 @@
+# Bytez
+
+## Docs
+
+- [About](https://docs.bytez.com/company/about.md): The story, mission, and community behind Bytez
+- [Blog](https://docs.bytez.com/company/blog.md)
+- [Integrations & Roadmap](https://docs.bytez.com/company/roadmap.md)
+- [Solutions](https://docs.bytez.com/company/solutions.md)
+- [Anthropic](https://docs.bytez.com/http-reference/examples/closed-source/anthropic.md): Send requests to any Anthropic model by specifying the `{model}` placeholder in the path.
+- [Cohere](https://docs.bytez.com/http-reference/examples/closed-source/cohere.md): Send requests to any Cohere model by specifying the `{model}` placeholder in the path.
+- [Google](https://docs.bytez.com/http-reference/examples/closed-source/google.md): Send requests to any Google model by specifying the `{model}` placeholder in the path.
+- [Mistral](https://docs.bytez.com/http-reference/examples/closed-source/mistral.md): Send requests to any Mistral model by specifying the `{model}` placeholder in the path.
+- [OpenAI](https://docs.bytez.com/http-reference/examples/closed-source/openai.md): Send requests to any OpenAI model by specifying the `{model}` placeholder in the path.
+- [audio-classification](https://docs.bytez.com/http-reference/examples/open-source/audio-classification/audio-classification.md): Classify audio clips into predefined categories such as speech emotion, sound detection, and music genres
+- [audio-text-to-text](https://docs.bytez.com/http-reference/examples/open-source/audio-text-to-text/audio-text-to-text.md): Chat with AI models using text and audio. Also known as audio-text-to-text
+- [automatic-speech-recognition](https://docs.bytez.com/http-reference/examples/open-source/automatic-speech-recognition/automatic-speech-recognition.md): Convert spoken language into written text for transcription services, voice assistants, and accessibility features
+- [chat](https://docs.bytez.com/http-reference/examples/open-source/chat/chat.md): Use the latest AI chat models
+- [depth-estimation](https://docs.bytez.com/http-reference/examples/open-source/depth-estimation/depth-estimation.md): Predict object distances from a camera using depth estimation models for robotics, AR, and autonomous vehicles
+- [document-question-answering](https://docs.bytez.com/http-reference/examples/open-source/document-question-answering/document-question-answering.md): Answer questions based on document content for tasks like contract analysis, document understanding, and information retrieval
+- [feature-extraction](https://docs.bytez.com/http-reference/examples/open-source/feature-extraction/feature-extraction.md): Convert text into vectors (embeddings) that capture semantic meaning
+- [fill-mask](https://docs.bytez.com/http-reference/examples/open-source/fill-mask/fill-mask.md): Predict missing words in a sentence for tasks like text completion, language modeling, and text generation
+- [image-classification](https://docs.bytez.com/http-reference/examples/open-source/image-classification/image-classification.md): Categorize images into predefined classes for tasks like object recognition, medical imaging, and security systems
+- [image-feature-extraction](https://docs.bytez.com/http-reference/examples/open-source/image-feature-extraction/image-feature-extraction.md): Extract features from images for tasks like object detection, image classification, and image retrieval
+- [image-segmentation](https://docs.bytez.com/http-reference/examples/open-source/image-segmentation/image-segmentation.md): Divide an image into multiple segments for applications like medical imaging, object detection, and computer vision tasks
+- [image-text-to-text](https://docs.bytez.com/http-reference/examples/open-source/image-text-to-text/image-text-to-text.md): Chat with AI models using text and images. Also known as image-text-to-text
+- [image-to-text](https://docs.bytez.com/http-reference/examples/open-source/image-to-text/image-to-text.md): Generate textual descriptions from images for tasks like image captioning, content generation, and accessibility features
+- [mask-generation](https://docs.bytez.com/http-reference/examples/open-source/mask-generation/mask-generation.md): Generate masks for objects in images for tasks like image segmentation, medical imaging, and computer vision applications
+- [object-detection](https://docs.bytez.com/http-reference/examples/open-source/object-detection/object-detection.md): Identify and locate objects in images for applications like security systems, autonomous driving, and retail analytics
+- [question-answering](https://docs.bytez.com/http-reference/examples/open-source/question-answering/question-answering.md): Answer questions based on a given context for applications like customer support, information retrieval, and educational tools
+- [sentence-similarity](https://docs.bytez.com/http-reference/examples/open-source/sentence-similarity/sentence-similarity.md): Measure how similar two sentences are for applications like duplicate question detection, paraphrase detection, and text clustering
+- [summarization](https://docs.bytez.com/http-reference/examples/open-source/summarization/summarization.md): Summarization involves creating concise summaries of longer texts. Use cases include news summarization, document summarization, and generating abstracts
+- [text-classification](https://docs.bytez.com/http-reference/examples/open-source/text-classification/text-classification.md): Categorize text into predefined classes for applications like sentiment analysis, spam detection, and topic classification
+- [text-generation](https://docs.bytez.com/http-reference/examples/open-source/text-generation/text-generation.md): Generate text from an initial prompt for applications like story generation, dialogue systems, and creative writing
+- [text-to-audio](https://docs.bytez.com/http-reference/examples/open-source/text-to-audio/text-to-audio.md): Send a text input to generate an audio output
+- [text-to-image](https://docs.bytez.com/http-reference/examples/open-source/text-to-image/text-to-image.md): Generate images using text
+- [text-to-speech](https://docs.bytez.com/http-reference/examples/open-source/text-to-speech/text-to-speech.md): Convert text into natural-sounding speech for applications like virtual assistants, accessibility features, and content creation
+- [text-to-video](https://docs.bytez.com/http-reference/examples/open-source/text-to-video/text-to-video.md): Generate videos from textual descriptions for applications like content creation, entertainment, and education
+- [text2text-generation](https://docs.bytez.com/http-reference/examples/open-source/text2text-generation/text2text-generation.md): Generate text from input text for applications like text completion, content generation, and dialogue systems
+- [token-classification](https://docs.bytez.com/http-reference/examples/open-source/token-classification/token-classification.md): Identify and categorize tokens in text for Named Entity Recognition (NER), Part-of-Speech tagging, and other NLP tasks
+- [translation](https://docs.bytez.com/http-reference/examples/open-source/translation/translation.md): Translate text from one language to another for multilingual communication, content localization, and language learning
+- [unconditional-image-generation](https://docs.bytez.com/http-reference/examples/open-source/unconditional-image-generation/unconditional-image-generation.md): Randomly generate images without an input
+- [video-classification](https://docs.bytez.com/http-reference/examples/open-source/video-classification/video-classification.md): Categorize videos into predefined classes for applications in video content analysis, security surveillance, and media organization
+- [video-text-to-text](https://docs.bytez.com/http-reference/examples/open-source/video-text-to-text/video-text-to-text.md): Chat with AI models using text and videos. Also known as video-text-to-text
+- [visual-question-answering](https://docs.bytez.com/http-reference/examples/open-source/visual-question-answering/visual-question-answering.md): Answer questions based on image content for applications like interactive learning, accessibility features, and content analysis
+- [zero-shot-classification](https://docs.bytez.com/http-reference/examples/open-source/zero-shot-classification/zero-shot-classification.md): Classify text into categories not seen during training for applications like intent detection, content moderation, and dynamic classification
+- [zero-shot-image-classification](https://docs.bytez.com/http-reference/examples/open-source/zero-shot-image-classification/zero-shot-image-classification.md): Classify images into categories not seen during training for applications like novel object recognition, transfer learning, and few-shot learning
+- [zero-shot-object-detection](https://docs.bytez.com/http-reference/examples/open-source/zero-shot-object-detection/zero-shot-object-detection.md): Detect objects in images without prior training on those specific objects. Use cases include novel object detection, transfer learning, and few-shot learning
+- [Chat Completions](https://docs.bytez.com/http-reference/examples/openai-compliant/chatCompletionsExample.md): Use OpenAI-compatible endpoints for chat and text completions via OpenAI clients, supporting streaming and custom parameters.
+- [Completions](https://docs.bytez.com/http-reference/examples/openai-compliant/completionsExample.md): Use OpenAI-compatible endpoints for chat and text completions via OpenAI clients, supporting streaming and custom parameters.
+- [Responses](https://docs.bytez.com/http-reference/examples/openai-compliant/responsesExample.md): Use the OpenAI-compatible Responses endpoint via OpenAI clients, supporting streaming, tool calling, and reasoning ("thinking") parameters.
+- [Models](https://docs.bytez.com/http-reference/list/models.md): Retrieve a list of available models for various tasks. Use the query parameter `task` to filter by task type, e.g. `chat`.
+- [Tasks](https://docs.bytez.com/http-reference/list/tasks.md): Retrieve a list of tasks
+- [Run Model](https://docs.bytez.com/http-reference/model/run.md): Runs an open/closed model. Acts serverlessly. (We manage everything behind the scenes.)
+- [Chat Completions](https://docs.bytez.com/http-reference/oaiCompliant/chatCompletions.md): Sends a prompt to an OpenAI compatible chat completion model and returns a completion. Provides completions for open source models that are `text-generation`, `chat`, `audio-text-to-text`, `image-text-to-text`, `video-text-to-text`, and also supports closed source providers `openai`, `anthropic`, `m…
+- [Completions](https://docs.bytez.com/http-reference/oaiCompliant/completions.md): Sends a prompt to an OpenAI compatible completion model and returns a completion. Provides completions for open source models that are `text-generation`, `chat`, `audio-text-to-text`, `image-text-to-text`, `video-text-to-text`, and also supports closed source providers `openai`, `anthropic`, `mistra…
+- [Responses](https://docs.bytez.com/http-reference/oaiCompliant/responses.md): Sends input to an OpenAI compatible Responses model and returns a unified response object. Supports text and chat-style input, streaming, tools, and (for supported reasoning models) "thinking" via the `reasoning` object. To send a request to a closed source provider, prefix your model with their pro…
+- [Overview](https://docs.bytez.com/http-reference/overview.md): An Overview of CRUD Operations & Unified Input Schemas for SOTA AI models
+- [LangChain](https://docs.bytez.com/integrations/langchain.md): Using `LangChain` with the Bytez API
+- [Billing & Credits](https://docs.bytez.com/model-api/docs/billing.md): How billing works for open and closed models
+- [Provider specific params](https://docs.bytez.com/model-api/docs/closed-source-params.md): Using closed source models with params
+- [Containers](https://docs.bytez.com/model-api/docs/containers.md): Run open models locally, offline, and on edge devices
+- [Get started](https://docs.bytez.com/model-api/docs/get-started.md): Install our API libraries and run inference in seconds
+- [Request a model](https://docs.bytez.com/model-api/docs/requestAModel.md): How to request a model
+- [API Status Dashboard](https://docs.bytez.com/model-api/docs/status.md): Check uptime and health of the API
+- [audio-classification](https://docs.bytez.com/model-api/docs/task/audio-classification.md): Classify audio clips into predefined categories such as speech emotion, sound detection, and music genres
+- [Multimodal - Audio](https://docs.bytez.com/model-api/docs/task/audio-text-to-text.md): Chat with AI models using text and audio. Also known as audio-text-to-text
+- [automatic-speech-recognition](https://docs.bytez.com/model-api/docs/task/automatic-speech-recognition.md): Convert spoken language into written text for transcription services, voice assistants, and accessibility features
+- [Get started](https://docs.bytez.com/model-api/docs/task/chat.md): Use the latest AI chat models
+- [Closed source models](https://docs.bytez.com/model-api/docs/task/chat-closed-source.md): Using chat and chat multi-modal models with closed source providers (OpenAI, Anthropic, etc)
+- [depth-estimation](https://docs.bytez.com/model-api/docs/task/depth-estimation.md): Predict object distances from a camera using depth estimation models for robotics, AR, and autonomous vehicles
+- [document-question-answering](https://docs.bytez.com/model-api/docs/task/document-question-answering.md): Answer questions based on document content for tasks like contract analysis, document understanding, and information retrieval
+- [feature-extraction](https://docs.bytez.com/model-api/docs/task/feature-extraction.md): Convert text into vectors (embeddings) that capture semantic meaning
+- [fill-mask](https://docs.bytez.com/model-api/docs/task/fill-mask.md): Predict missing words in a sentence for tasks like text completion, language modeling, and text generation
+- [image-classification](https://docs.bytez.com/model-api/docs/task/image-classification.md): Categorize images into predefined classes for tasks like object recognition, medical imaging, and security systems
+- [image-feature-extraction](https://docs.bytez.com/model-api/docs/task/image-feature-extraction.md): Extract features from images for tasks like object detection, image classification, and image retrieval
+- [image-segmentation](https://docs.bytez.com/model-api/docs/task/image-segmentation.md): Divide an image into multiple segments for applications like medical imaging, object detection, and computer vision tasks
+- [Multimodal - Vision](https://docs.bytez.com/model-api/docs/task/image-text-to-text.md): Chat with AI models using text and images. Also known as image-text-to-text
+- [image-to-text](https://docs.bytez.com/model-api/docs/task/image-to-text.md): Generate textual descriptions from images for tasks like image captioning, content generation, and accessibility features
+- [mask-generation](https://docs.bytez.com/model-api/docs/task/mask-generation.md): Generate masks for objects in images for tasks like image segmentation, medical imaging, and computer vision applications
+- [object-detection](https://docs.bytez.com/model-api/docs/task/object-detection.md): Identify and locate objects in images for applications like security systems, autonomous driving, and retail analytics
+- [question-answering](https://docs.bytez.com/model-api/docs/task/question-answering.md): Answer questions based on a given context for applications like customer support, information retrieval, and educational tools
+- [sentence-similarity](https://docs.bytez.com/model-api/docs/task/sentence-similarity.md): Measure how similar two sentences are for applications like duplicate question detection, paraphrase detection, and text clustering
+- [summarization](https://docs.bytez.com/model-api/docs/task/summarization.md): Summarization involves creating concise summaries of longer texts. Use cases include news summarization, document summarization, and generating abstracts
+- [text-classification](https://docs.bytez.com/model-api/docs/task/text-classification.md): Categorize text into predefined classes for applications like sentiment analysis, spam detection, and topic classification
+- [text-generation](https://docs.bytez.com/model-api/docs/task/text-generation.md): Generate text from an initial prompt for applications like story generation, dialogue systems, and creative writing
+- [text-to-audio](https://docs.bytez.com/model-api/docs/task/text-to-audio.md): Send a text input to generate an audio output
+- [text-to-image](https://docs.bytez.com/model-api/docs/task/text-to-image.md): Generate images using text
+- [text-to-speech](https://docs.bytez.com/model-api/docs/task/text-to-speech.md): Convert text into natural-sounding speech for applications like virtual assistants, accessibility features, and content creation
+- [text-to-video](https://docs.bytez.com/model-api/docs/task/text-to-video.md): Generate videos from textual descriptions for applications like content creation, entertainment, and education
+- [text2text-generation](https://docs.bytez.com/model-api/docs/task/text2text-generation.md): Generate text from input text for applications like text completion, content generation, and dialogue systems
+- [token-classification](https://docs.bytez.com/model-api/docs/task/token-classification.md): Identify and categorize tokens in text for Named Entity Recognition (NER), Part-of-Speech tagging, and other NLP tasks
+- [translation](https://docs.bytez.com/model-api/docs/task/translation.md): Translate text from one language to another for multilingual communication, content localization, and language learning
+- [unconditional-image-generation](https://docs.bytez.com/model-api/docs/task/unconditional-image-generation.md): Randomly generate images without an input
+- [video-classification](https://docs.bytez.com/model-api/docs/task/video-classification.md): Categorize videos into predefined classes for applications in video content analysis, security surveillance, and media organization
+- [Multimodal - Video](https://docs.bytez.com/model-api/docs/task/video-text-to-text.md): Chat with AI models using text and videos. Also known as video-text-to-text
+- [visual-question-answering](https://docs.bytez.com/model-api/docs/task/visual-question-answering.md): Answer questions based on image content for applications like interactive learning, accessibility features, and content analysis
+- [zero-shot-classification](https://docs.bytez.com/model-api/docs/task/zero-shot-classification.md): Classify text into categories not seen during training for applications like intent detection, content moderation, and dynamic classification
+- [zero-shot-image-classification](https://docs.bytez.com/model-api/docs/task/zero-shot-image-classification.md): Classify images into categories not seen during training for applications like novel object recognition, transfer learning, and few-shot learning
+- [zero-shot-object-detection](https://docs.bytez.com/model-api/docs/task/zero-shot-object-detection.md): Detect objects in images without prior training on those specific objects. Use cases include novel object detection, transfer learning, and few-shot learning
+- [Open vs Closed models](https://docs.bytez.com/model-api/docs/understand-the-api.md): We handle open & closed models differently
+- [Welcome](https://docs.bytez.com/model-api/docs/welcome.md): The unified API for 100,000+ AI models
+
+## OpenAPI Specs
+
+- [openapi](https://docs.bytez.com/http-reference/openapi.yaml)

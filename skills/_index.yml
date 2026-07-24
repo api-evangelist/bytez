@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: generated
+source: openapi/bytez-openapi.yaml
+skills:
+- file: bytez-run-a-model.md
+  name: Run a Bytez model
+  api: openapi/bytez-openapi.yaml
+  operations: [getTasks, getModels, runModel]
+- file: bytez-openai-compatible-chat.md
+  name: Chat via OpenAI-compatible endpoint
+  api: openapi/bytez-openapi.yaml
+  operations: [getModels, runModel]

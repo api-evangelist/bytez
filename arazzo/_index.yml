@@ -1,0 +1,8 @@
+generated: '2026-07-18'
+method: derived
+source: arazzo/*.yml
+workflows:
+- file: bytez-discover-and-run.yml
+  workflowId: discoverAndRunModel
+  title: Discover and run a Bytez model
+  summary: List models for a task, pick one, and run serverless inference.

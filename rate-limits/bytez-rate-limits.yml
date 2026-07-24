@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.bytez.com/model-api/docs/billing
+signal:
+  status_code: 429
+  error_message: Rate limit exceeded
+  header_based: false
+  notes: >-
+    Limits are enforced by tier/credits rather than published response headers.
+    A 429 with envelope error "Rate limit exceeded" signals throttling.
+tiers:
+- name: Free
+  price: $0/month ($1 free credits, refresh every 4 weeks)
+  open_model_concurrency: 1
+  open_model_max_params: 7B
+  closed_model_rate: 10 requests/second
+- name: Pay-as-you-go
+  price: $3/month ($5 credits)
+  open_model_max_params: 120B
+  closed_model_rate: unlimited
+  notes: Concurrency and open-model size unlock scale with credits purchased in the last 4 weeks ($3+ = 4 concurrent 7B, $10+ = up to 35B).

@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.bytez.com/model-api/docs/get-started
+packages:
+- language: javascript
+  registry: npm
+  name: bytez.js
+  version: 3.0.0
+  url: https://www.npmjs.com/package/bytez.js
+  install: npm i bytez.js
+  official: true
+- language: python
+  registry: pypi
+  name: bytez
+  version: 3.0.1
+  url: https://pypi.org/project/bytez/
+  install: pip install bytez
+  official: true
+- language: python
+  registry: pypi
+  name: langchain-bytez
+  version: 0.0.7
+  url: https://pypi.org/project/langchain-bytez/
+  install: pip install langchain-bytez
+  official: true
+  notes: LangChain integration package for the Bytez model API.
+notes: >-
+  Official first-party SDKs published under the Bytez-com GitHub org
+  (github.com/Bytez-com/docs). A Julia library is listed as "coming soon" on the
+  roadmap and is not yet published, so it is not catalogued here. A browser
+  extension (github.com/Bytez-com/extension) also exists but is an end-user
+  product, not a client library.

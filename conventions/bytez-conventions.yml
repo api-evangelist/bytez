@@ -1,0 +1,49 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.bytez.com/http-reference/overview
+docs:
+- https://docs.bytez.com/model-api/docs/get-started
+- https://docs.bytez.com/model-api/docs/billing
+- https://docs.bytez.com/model-api/docs/understand-the-api
+authentication:
+  style: api-key-header
+  header: Authorization
+  value: 'raw Bytez key (e.g. Authorization: BYTEZ_KEY)'
+  closed_source: second `provider-key` header carrying the provider account key (pass-through, never stored)
+  detail: authentication/bytez-authentication.yml
+idempotency:
+  supported: false
+  notes: >-
+    No idempotency-key header or param is documented. Inference calls are
+    serverless single-shot POSTs; there is no create-resource surface that would
+    require idempotent retry semantics.
+pagination:
+  supported: false
+  notes: The list endpoints (models, tasks) return full arrays with no cursor/offset paging documented.
+request_response:
+  base_url: https://api.bytez.com
+  content_type: application/json
+  envelope: '{ "error": string|null, "output": result|null }'
+  streaming: >-
+    `stream: true` streams text token-by-token; `json: true` streams back media
+    instead of returning it inline in JSON.
+  media_inputs: pass images/audio/video by `url` (recommended) or `base64`.
+versioning:
+  scheme: uri-path
+  current: v2
+  path_prefix: /models/v2
+openai_compatibility:
+  supported: true
+  endpoints: [Chat Completions, Completions, Responses]
+  notes: >-
+    OpenAI-compatible endpoints let you point existing OpenAI clients at Bytez.
+    Prefix a closed-source model with its provider (e.g. openai/..., anthropic/...).
+    Supports streaming, tool calling, and reasoning ("thinking") on supported models.
+  docs: https://docs.bytez.com/http-reference/oaiCompliant/chatCompletions
+rate_limit_signal:
+  detail: rate-limits/bytez-rate-limits.yml
+  status_code: 429
+error_envelope:
+  detail: errors/bytez-problem-types.yml
+lifecycle:
+  detail: lifecycle/bytez-lifecycle.yml
