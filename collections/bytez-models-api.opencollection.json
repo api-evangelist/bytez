@@ -1,0 +1,89 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Source Model Models API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Models",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run Model",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bytez.com/models/v2/:modelId",
+            "params": [
+              {
+                "name": "modelId",
+                "value": "",
+                "type": "path",
+                "description": "The model you want to run (e.g., `openai-community/gpt2`)."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "apikey",
+              "key": "Authorization",
+              "value": "{{Authorization}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Runs an open/closed model. Acts serverlessly. (We manage everything behind the scenes.)"
+        },
+        {
+          "info": {
+            "name": "Models",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bytez.com/models/v2/list/models",
+            "params": [
+              {
+                "name": "task",
+                "value": "",
+                "type": "query",
+                "description": "The specific task type to filter models. Run list.tasks() for the full list. Some supported tasks include:\n`audio-classification`, `audio-text-to-text`, `automatic-speech-recognition`, `chat`, `depth-estimation`, `document-question-answering`, `feature-extraction`, `fill-mask`, `image-classification`, `image-feature-extraction`, `image-segmentation`, `image-text-to-text`, `image-to-text`, `mask-generation`, `object-detection`, `question-answering`, `sentence-similarity`, `summarization`, `text-classification`, `text-generation`, `text-to-audio`, `text-to-image`, `text-to-speech`, `text-to-video`, `text2text-generation`, `token-classification`, `translation`, `unconditional-image-generation`, `video-classification`, `video-text-to-text`, `visual-question-answering`, `zero-shot-classification`, `zero-shot-image-classification`, `zero-shot-object-detection`."
+              }
+            ],
+            "auth": {
+              "type": "apikey",
+              "key": "Authorization",
+              "value": "{{Authorization}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Retrieve a list of available models for various tasks. Use the query parameter `task` to filter by task type, e.g. `chat`.\n"
+        },
+        {
+          "info": {
+            "name": "Tasks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bytez.com/models/v2/list/tasks",
+            "auth": {
+              "type": "apikey",
+              "key": "Authorization",
+              "value": "{{Authorization}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Retrieve a list of tasks"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
