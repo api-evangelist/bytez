@@ -4,8 +4,8 @@ info:
   version: 1.0.0
   summary: List models for a task, pick one, and run serverless inference.
 sourceDescriptions:
-- name: bytezApi
-  url: ../openapi/bytez-openapi.yaml
+- name: modelsApi
+  url: ../openapi/bytez-models-api-openapi.yml
   type: openapi
 workflows:
 - workflowId: discoverAndRunModel
