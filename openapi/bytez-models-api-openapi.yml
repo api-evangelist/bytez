@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Open Source Model Models API
-  description: '# 🚀 Get started here ✨ Link to [Bytez Docs](https://docs.bytez.com/model-api/docs/welcome).'
+  description: '# 🚀 Get started here ✨ Link to Bytez Docs.'
   version: 1.0.0
 servers:
 - url: https://api.bytez.com
@@ -144,9 +144,7 @@ paths:
   /models/v2/list/models:
     get:
       summary: Models
-      description: 'Retrieve a list of available models for various tasks. Use the query parameter `task` to filter by task type, e.g. `chat`.
-
-        '
+      description: Retrieve a list of available models for various tasks. Use the query parameter `task` to filter by task type, e.g. `chat`.
       operationId: getModels
       parameters:
       - name: task
@@ -249,20 +247,15 @@ paths:
       tags:
       - Models
 components:
+  parameters:
+    modelId:
+      name: modelId
+      in: path
+      required: true
+      description: The model you want to run (e.g., `openai-community/gpt2`).
+      schema:
+        type: string
   responses:
-    RateLimitError:
-      description: Too Many Requests – You have hit the rate limit.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              error:
-                type: string
-                example: Rate limit exceeded
-              output:
-                type: string
-                example: null
     Unauthorized:
       description: Auth error - check your api key and how you're sending it.
       content:
@@ -276,14 +269,19 @@ components:
               output:
                 type: string
                 example: null
-  parameters:
-    modelId:
-      name: modelId
-      in: path
-      required: true
-      description: The model you want to run (e.g., `openai-community/gpt2`).
-      schema:
-        type: string
+    RateLimitError:
+      description: Too Many Requests – You have hit the rate limit.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Rate limit exceeded
+              output:
+                type: string
+                example: null
   securitySchemes:
     apiKeyAuth:
       type: apiKey

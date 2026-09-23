@@ -1,7 +1,7 @@
 {
   "provider": "bytez",
   "sources": [
-    "bytez-models-api-openapi.yml"
+    "_original/bytez-openapi.yaml"
   ],
   "outputs": [
     "bytez-models-api-openapi.yml"
@@ -9,6 +9,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bytez-openapi.yaml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "bytez-openapi.yaml: tagged paths POST /models/v2/{modelId} -> Models",
+    "bytez-openapi.yaml: tagged paths GET /models/v2/list/models -> Models",
+    "bytez-openapi.yaml: tagged paths GET /models/v2/list/tasks -> Models",
+    "bytez-openapi.yaml: declared missing tag: Models",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "bytez-models-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
