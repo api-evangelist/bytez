@@ -53,7 +53,7 @@ x-docs-hosting: vercel
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Model Inference
 - LLM
 - Open Source AI
@@ -67,6 +67,7 @@ tags_raw:
 - Open Source AI
 - API
 - Developers
+- Machine-Learning
 apis:
 - aid: bytez:bytez-models-api
   name: Bytez Models API

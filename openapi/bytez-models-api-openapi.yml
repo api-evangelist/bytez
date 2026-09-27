@@ -247,28 +247,7 @@ paths:
       tags:
       - Models
 components:
-  parameters:
-    modelId:
-      name: modelId
-      in: path
-      required: true
-      description: The model you want to run (e.g., `openai-community/gpt2`).
-      schema:
-        type: string
   responses:
-    Unauthorized:
-      description: Auth error - check your api key and how you're sending it.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              error:
-                type: string
-                example: Unauthorized
-              output:
-                type: string
-                example: null
     RateLimitError:
       description: Too Many Requests – You have hit the rate limit.
       content:
@@ -282,6 +261,27 @@ components:
               output:
                 type: string
                 example: null
+    Unauthorized:
+      description: Auth error - check your api key and how you're sending it.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Unauthorized
+              output:
+                type: string
+                example: null
+  parameters:
+    modelId:
+      name: modelId
+      in: path
+      required: true
+      description: The model you want to run (e.g., `openai-community/gpt2`).
+      schema:
+        type: string
   securitySchemes:
     apiKeyAuth:
       type: apiKey
