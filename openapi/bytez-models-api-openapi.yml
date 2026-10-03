@@ -248,19 +248,6 @@ paths:
       - Models
 components:
   responses:
-    RateLimitError:
-      description: Too Many Requests – You have hit the rate limit.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              error:
-                type: string
-                example: Rate limit exceeded
-              output:
-                type: string
-                example: null
     Unauthorized:
       description: Auth error - check your api key and how you're sending it.
       content:
@@ -271,6 +258,19 @@ components:
               error:
                 type: string
                 example: Unauthorized
+              output:
+                type: string
+                example: null
+    RateLimitError:
+      description: Too Many Requests – You have hit the rate limit.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Rate limit exceeded
               output:
                 type: string
                 example: null
