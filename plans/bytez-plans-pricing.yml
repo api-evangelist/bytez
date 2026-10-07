@@ -1,0 +1,90 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://docs.bytez.com/model-api/docs/billing
+sources:
+- https://docs.bytez.com/model-api/docs/billing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: per-call
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Pay-as-you-go
+published: true
+note: 'Credit-based billing doc: open models billed per second of inference by model size; closed models
+  pass-through provider price plus 2% fee. Base rate stated as $0.0000045/GB-second of VRAM. Auto-reload
+  defaults: $3 threshold, $10 reload, $100 monthly max. Volume pricing via contact.'
+plan_count: 8
+currency: USD
+plans:
+- name: Free
+  price_text: Free
+  period: none
+  included_quota: Run open models up to 7B parameters, access all closed model providers, free credits
+    refreshed every 4 weeks
+- name: Pay-as-you-go
+  price_text: $5 in credits granted each billing cycle
+  price: 5
+  currency: USD
+  period: month
+  unit: credits
+  included_quota: Run open models up to 120B parameters, unlimited closed model requests
+  overage: Add credits anytime; credits expire 4 weeks after purchase
+- name: Open model 7B
+  price_text: $0.000072
+  price: 7.2e-05
+  currency: USD
+  period: per-use
+  unit: per second of inference
+  included_quota: ~$0.26 per hour
+- name: Open model 15B
+  price_text: $0.000108
+  price: 0.000108
+  currency: USD
+  period: per-use
+  unit: per second of inference
+  included_quota: ~$0.39 per hour
+- name: Open model 35B
+  price_text: $0.000144
+  price: 0.000144
+  currency: USD
+  period: per-use
+  unit: per second of inference
+  included_quota: ~$0.52 per hour
+- name: Open model 70B
+  price_text: $0.000216
+  price: 0.000216
+  currency: USD
+  period: per-use
+  unit: per second of inference
+  included_quota: ~$0.78 per hour
+- name: Open model 120B
+  price_text: $0.00036
+  price: 0.00036
+  currency: USD
+  period: per-use
+  unit: per second of inference
+  included_quota: ~$1.30 per hour
+- name: Closed model billing
+  price_text: Provider price + 2% platform fee
+  price: 2
+  period: per-use
+  unit: pass-through provider pricing plus 2%
+rate_limit_statements:
+- 1 concurrent request (open models)
+- 10 requests/second (closed models)
+- Rate limits scale with credits purchased
+- Unlimited closed model requests
+- $0 (Free) Up to 7B 1
+- $3+ Up to 7B 4
+- $10+ Up to 35B 4
+- $25+ Up to 70B 10
+- $50+ Up to 120B 20
+- $100+ Up to 120B 40
+- $500+ Up to 120B 200
+- $1,000+ Up to 120B 400
