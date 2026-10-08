@@ -97,6 +97,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/bytez-rate-limits.yml
 - type: Plans
   url: plans/bytez-plans-pricing.yml
 - type: CapabilityMap
