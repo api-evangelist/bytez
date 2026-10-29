@@ -64,6 +64,137 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bytez is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Bytez is a unified, serverless model-inference API that gives developers access to 100,000+ open-source and closed-source AI models (from OpenAI, Anthropic, Cohere, Google, Mistral, and the open-source community) through a single API key and one consistent endpoint shape. It covers 30+ task types across text, vision, audio, multimodal, and generation - including chat, embeddings, transcription, image and video generation, translation, and object detection - and offers OpenAI-compatible Chat Completions, Completions, and Responses endpoints plus a LangChain integration. Bytez manages GPU provisioning and scaling behind the scenes and bills on a unified credit system (per second for open models, provider pricing for closed models). It is backed by 500 Global.
 
-Backed by: 500-global — https://bytez.com
+**Areas:** Company · Artificial Intelligence · Machine Learning · Model Inference · LLM · Open Source AI · Developers
+
+## Bytez on APIs.io
+
+Everything profiled for Bytez is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bytez/](https://apis.io/providers/bytez/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Bytez Models API](https://apis.io/apis/bytez/bytez-models-api/) — The Models API from Bytez — 3 operation(s) for models.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Arazzo workflows (1)
+
+Multi-step workflows that chain operations into a business task.
+
+- [Discover and run a Bytez model](https://apis.io/arazzos/bytez/bytez-discover-and-run/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [bytez](https://apis.io/servers/bytez/bytez/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Bytez Agentic Access](https://apis.io/agentic-access/bytez/bytez-agentic-access/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Open Source Model Models API](https://apis.io/collections/bytez/open-bytez-models-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Bytez Openapi Overlay](https://apis.io/overlays/bytez/bytez-openapi-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bytez Authentication](https://apis.io/security/bytez/bytez-authentication/)
+- [Bytez Domain Security](https://apis.io/security/bytez/bytez-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Bytez Plans Pricing](https://apis.io/plans/bytez/bytez-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Bytez Rate Limits](https://apis.io/rate-limits/bytez/bytez-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bytez.com)
+- [Documentation](https://docs.bytez.com/model-api/docs/welcome)
+- [Getting started](https://docs.bytez.com/model-api/docs/get-started)
+- [API reference](https://docs.bytez.com/http-reference/overview)
+- [Pricing](https://docs.bytez.com/model-api/docs/billing)
+- [Sign up](https://bytez.com/api)
+- [Support](https://discord.com/invite/Z723PfCFWf)
+- [Blog](https://docs.bytez.com/company/blog)
+- [GitHub](https://github.com/Bytez-com)
+- [Status](https://status.bytez.com)
+
+## API Evangelist rating
+
+**Kin Score 46.1** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 50.2 |
+| Contract governance | 4.5 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 66.1 |
+| Access clarity | 55.3 |
+
+**Agent readiness 28.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 15.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bytez/](https://apis.io/providers/bytez/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bytez: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bytez/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
